@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Premier Plastic Solutions | Gerik Plasticus – Pretoria, South Africa</title>
+<meta name="description" content="Gerik Plasticus supplies shrink wrap, pallet wrap, and plastic tubing to businesses across South Africa. Custom sizes available. Based in Waltloo, Pretoria. Get a quote on WhatsApp.">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --navy:#0a2a4a;
+  --blue:#1565c0;
+  --blue-mid:#1976d2;
+  --blue-light:#e8f1fb;
+  --blue-accent:#2196f3;
+  --white:#ffffff;
+  --off-white:#f5f8fd;
+  --text-dark:#0a1929;
+  --text-mid:#2c4a6e;
+  --text-muted:#5a7a9a;
+  --border:#d0e0f0;
+  --whatsapp:#25d366;
+}
+body{font-family:'Barlow',sans-serif;color:var(--text-dark);background:var(--white);font-size:16px;line-height:1.6}
+
+/* NAV */
+nav{background:var(--white);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100;padding:0 2rem}
+.nav-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:70px}
+.logo-wrap img{height:52px;display:block}
+.nav-links{display:flex;gap:2rem;list-style:none}
+.nav-links a{text-decoration:none;color:var(--text-mid);font-weight:500;font-size:15px;letter-spacing:0.02em;transition:color 0.2s}
+.nav-links a:hover{color:var(--blue)}
+.nav-cta{background:var(--blue);color:var(--white)!important;padding:8px 20px;border-radius:6px;font-weight:600!important;transition:background 0.2s!important}
+.nav-cta:hover{background:var(--navy)!important;color:var(--white)!important}
+
+/* HERO */
+.hero{background:linear-gradient(135deg,var(--navy) 0%,#0d3b6e 60%,#1565c0 100%);color:var(--white);padding:90px 2rem 80px;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:-60px;right:-80px;width:500px;height:500px;border-radius:50%;border:1px solid rgba(255,255,255,0.07);pointer-events:none}
+.hero::after{content:'';position:absolute;bottom:-100px;right:60px;width:320px;height:320px;border-radius:50%;border:1px solid rgba(255,255,255,0.05);pointer-events:none}
+.hero-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+.hero-tag{display:inline-block;background:rgba(255,255,255,0.12);color:rgba(255,255,255,0.9);font-size:13px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;padding:5px 14px;border-radius:20px;margin-bottom:1.2rem;border:1px solid rgba(255,255,255,0.15)}
+.hero h1{font-family:'Barlow Condensed',sans-serif;font-size:clamp(2.4rem,4vw,3.4rem);font-weight:700;line-height:1.1;margin-bottom:1.2rem;letter-spacing:-0.01em}
+.hero h1 span{color:#7ec8e3}
+.hero p{font-size:17px;color:rgba(255,255,255,0.82);line-height:1.7;margin-bottom:2rem;max-width:480px}
+.hero-btns{display:flex;gap:1rem;flex-wrap:wrap}
+.btn-primary{background:var(--white);color:var(--navy);padding:13px 28px;border-radius:7px;font-weight:700;font-size:15px;text-decoration:none;transition:all 0.2s;letter-spacing:0.01em}
+.btn-primary:hover{background:#e8f1fb;transform:translateY(-1px)}
+.btn-wa{background:var(--whatsapp);color:var(--white);padding:13px 28px;border-radius:7px;font-weight:700;font-size:15px;text-decoration:none;transition:all 0.2s;display:flex;align-items:center;gap:8px}
+.btn-wa:hover{background:#1db954;transform:translateY(-1px)}
+.wa-icon{width:20px;height:20px;fill:white}
+.hero-img{border-radius:12px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,0.3)}
+.hero-img img{width:100%;height:320px;object-fit:cover;display:block}
+.hero-stats{display:flex;gap:2rem;margin-top:2rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,0.15)}
+.stat-item .num{font-family:'Barlow Condensed',sans-serif;font-size:2rem;font-weight:700;color:var(--white)}
+.stat-item .lbl{font-size:13px;color:rgba(255,255,255,0.65);margin-top:2px}
+
+/* TRUST BAR */
+.trust-bar{background:var(--off-white);border-bottom:1px solid var(--border);padding:14px 2rem}
+.trust-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:2.5rem;flex-wrap:wrap}
+.trust-item{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:500;color:var(--text-mid)}
+.trust-dot{width:6px;height:6px;border-radius:50%;background:var(--blue)}
+
+/* PROBLEM/SOLUTION */
+.section{padding:80px 2rem}
+.section-inner{max-width:1100px;margin:0 auto}
+.section-tag{font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--blue);margin-bottom:0.75rem}
+.section-title{font-family:'Barlow Condensed',sans-serif;font-size:clamp(1.8rem,3vw,2.6rem);font-weight:700;color:var(--navy);line-height:1.15;margin-bottom:1rem}
+.section-sub{font-size:17px;color:var(--text-muted);max-width:600px;line-height:1.7}
+
+.intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;margin-top:3rem}
+.intro-text p{font-size:16px;color:var(--text-mid);line-height:1.8;margin-bottom:1rem}
+.intro-features{display:flex;flex-direction:column;gap:1rem;margin-top:1.5rem}
+.feat-row{display:flex;align-items:flex-start;gap:12px}
+.feat-check{width:22px;height:22px;min-width:22px;background:var(--blue-light);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px}
+.feat-check svg{width:12px;height:12px;stroke:var(--blue);stroke-width:2.5;fill:none}
+.feat-row span{font-size:15px;color:var(--text-mid);line-height:1.5}
+.intro-image{border-radius:12px;overflow:hidden;box-shadow:0 8px 32px rgba(21,101,192,0.12)}
+.intro-image img{width:100%;height:340px;object-fit:cover;display:block}
+
+/* PRODUCTS */
+.products{background:var(--off-white);padding:80px 2rem}
+.products-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.5rem;margin-top:3rem}
+.prod-card{background:var(--white);border-radius:12px;border:1px solid var(--border);overflow:hidden;transition:box-shadow 0.2s,transform 0.2s}
+.prod-card:hover{box-shadow:0 8px 32px rgba(21,101,192,0.13);transform:translateY(-3px)}
+.prod-img{height:170px;overflow:hidden}
+.prod-img img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.3s}
+.prod-card:hover .prod-img img{transform:scale(1.04)}
+.prod-body{padding:1.2rem 1.3rem}
+.prod-body h3{font-family:'Barlow Condensed',sans-serif;font-size:1.2rem;font-weight:700;color:var(--navy);margin-bottom:0.4rem}
+.prod-body p{font-size:14px;color:var(--text-muted);line-height:1.6;margin-bottom:0.8rem}
+.prod-tags{display:flex;flex-wrap:wrap;gap:5px}
+.tag{background:var(--blue-light);color:var(--blue-mid);font-size:12px;font-weight:600;padding:3px 9px;border-radius:20px}
+.prod-link{display:inline-flex;align-items:center;gap:4px;font-size:14px;font-weight:600;color:var(--blue);text-decoration:none;margin-top:0.8rem}
+.prod-link svg{width:14px;height:14px;stroke:currentColor;stroke-width:2;fill:none;transition:transform 0.2s}
+.prod-link:hover svg{transform:translateX(3px)}
+
+/* VALUE PROPS */
+.values{padding:80px 2rem;background:var(--white)}
+.values-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:2rem;margin-top:3rem}
+.val-card{text-align:center;padding:1.5rem 1rem}
+.val-icon{width:56px;height:56px;border-radius:14px;display:flex;align-items:center;justify-content:center;margin:0 auto 1rem}
+.val-icon svg{width:26px;height:26px;stroke:var(--white);stroke-width:1.8;fill:none}
+.val-card h4{font-family:'Barlow Condensed',sans-serif;font-size:1.15rem;font-weight:700;color:var(--navy);margin-bottom:0.4rem}
+.val-card p{font-size:14px;color:var(--text-muted);line-height:1.6}
+
+/* INDUSTRIES */
+.industries{background:var(--navy);color:var(--white);padding:80px 2rem}
+.industries .section-title{color:var(--white)}
+.ind-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin-top:3rem}
+.ind-card{background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:1.5rem 1.2rem;transition:background 0.2s}
+.ind-card:hover{background:rgba(255,255,255,0.12)}
+.ind-icon{font-size:2rem;margin-bottom:0.8rem}
+.ind-card h4{font-weight:600;font-size:15px;color:var(--white);margin-bottom:0.3rem}
+.ind-card p{font-size:13px;color:rgba(255,255,255,0.6)}
+
+/* CTA STRIP */
+.cta-strip{background:linear-gradient(135deg,#1565c0,#0a2a4a);padding:70px 2rem;text-align:center}
+.cta-strip h2{font-family:'Barlow Condensed',sans-serif;font-size:2.2rem;font-weight:700;color:var(--white);margin-bottom:0.8rem}
+.cta-strip p{font-size:17px;color:rgba(255,255,255,0.78);margin-bottom:2rem;max-width:520px;margin-left:auto;margin-right:auto}
+.cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+.btn-white{background:var(--white);color:var(--navy);padding:13px 28px;border-radius:7px;font-weight:700;font-size:15px;text-decoration:none;transition:all 0.2s}
+.btn-white:hover{background:#e8f1fb}
+.btn-outline-white{border:2px solid rgba(255,255,255,0.5);color:var(--white);padding:13px 28px;border-radius:7px;font-weight:600;font-size:15px;text-decoration:none;transition:all 0.2s}
+.btn-outline-white:hover{border-color:var(--white);background:rgba(255,255,255,0.08)}
+
+/* CONTACT */
+.contact{padding:80px 2rem;background:var(--off-white)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;margin-top:3rem;align-items:start}
+.contact-info{display:flex;flex-direction:column;gap:1.5rem}
+.c-item{display:flex;align-items:flex-start;gap:14px}
+.c-icon{width:42px;height:42px;min-width:42px;background:var(--blue-light);border-radius:10px;display:flex;align-items:center;justify-content:center}
+.c-icon svg{width:20px;height:20px;stroke:var(--blue);stroke-width:1.8;fill:none}
+.c-item h4{font-weight:600;font-size:15px;color:var(--navy);margin-bottom:2px}
+.c-item p,.c-item a{font-size:15px;color:var(--text-muted);text-decoration:none;line-height:1.6}
+.c-item a:hover{color:var(--blue)}
+.contact-form{background:var(--white);border-radius:12px;border:1px solid var(--border);padding:2rem}
+.contact-form h3{font-family:'Barlow Condensed',sans-serif;font-size:1.4rem;font-weight:700;color:var(--navy);margin-bottom:1.2rem}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem}
+.form-group{margin-bottom:1rem}
+.form-group label{display:block;font-size:13px;font-weight:600;color:var(--text-mid);margin-bottom:5px;letter-spacing:0.02em}
+.form-group input,.form-group select,.form-group textarea{width:100%;border:1px solid var(--border);border-radius:7px;padding:10px 14px;font-size:15px;font-family:'Barlow',sans-serif;color:var(--text-dark);background:var(--off-white);outline:none;transition:border 0.2s}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--blue);background:var(--white)}
+.form-group textarea{height:100px;resize:vertical}
+.btn-submit{background:var(--blue);color:var(--white);border:none;padding:12px 28px;border-radius:7px;font-weight:700;font-size:15px;font-family:'Barlow',sans-serif;cursor:pointer;width:100%;transition:background 0.2s}
+.btn-submit:hover{background:var(--navy)}
+.or-wa{text-align:center;margin-top:1rem;font-size:14px;color:var(--text-muted)}
+.wa-contact-btn{display:flex;align-items:center;justify-content:center;gap:8px;background:var(--whatsapp);color:var(--white);padding:12px 20px;border-radius:7px;font-weight:700;font-size:15px;text-decoration:none;margin-top:0.6rem;transition:background 0.2s}
+.wa-contact-btn:hover{background:#1db954}
+
+/* FOOTER */
+footer{background:var(--navy);color:rgba(255,255,255,0.7);padding:50px 2rem 30px}
+.footer-inner{max-width:1100px;margin:0 auto}
+.footer-top{display:grid;grid-template-columns:2fr 1fr 1fr;gap:3rem;margin-bottom:3rem}
+.footer-brand img{height:48px;margin-bottom:1rem;filter:brightness(0) invert(1);opacity:0.9}
+.footer-brand p{font-size:14px;line-height:1.7;max-width:280px}
+.footer-col h5{font-weight:700;font-size:14px;color:var(--white);letter-spacing:0.04em;text-transform:uppercase;margin-bottom:1rem}
+.footer-col ul{list-style:none}
+.footer-col ul li{margin-bottom:0.5rem}
+.footer-col ul li a{color:rgba(255,255,255,0.6);text-decoration:none;font-size:14px;transition:color 0.2s}
+.footer-col ul li a:hover{color:var(--white)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.1);padding-top:1.5rem;display:flex;justify-content:space-between;align-items:center;font-size:13px}
+
+/* FLOATING WA */
+.wa-float{position:fixed;bottom:28px;right:28px;z-index:999;background:var(--whatsapp);color:var(--white);width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,0.45);text-decoration:none;transition:transform 0.2s,box-shadow 0.2s}
+.wa-float:hover{transform:scale(1.08);box-shadow:0 6px 28px rgba(37,211,102,0.55)}
+.wa-float svg{width:30px;height:30px;fill:white}
+.wa-tooltip{position:fixed;bottom:38px;right:96px;background:var(--navy);color:var(--white);font-size:13px;font-weight:600;padding:6px 12px;border-radius:6px;white-space:nowrap;opacity:0;transition:opacity 0.2s;pointer-events:none}
+.wa-float:hover .wa-tooltip{opacity:1}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="logo-wrap" href="#">
+      <img src="https://gerik.co.za/wp-content/uploads/2018/06/cropped-Gerik-Plasticus-Logo_500x389-1-1.png" alt="Gerik Plasticus logo">
+    </a>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">Industries</a></li>
+      <li><a href="#">Our Story</a></li>
+      <li><a href="#">FAQ</a></li>
+      <li><a href="#" class="nav-cta">Get a Quote</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <div class="hero-tag">Pretoria-based · Supplying all of South Africa</div>
+      <h1>Premier Plastic Solutions For Your <span>Packaging Needs</span></h1>
+      <p>Shrink wrap, pallet wrap, and plastic tubing — standard or custom-made. Reliable supply, on-time delivery, any order size.</p>
+      <div class="hero-btns">
+        <a href="#products" class="btn-primary">View Our Products</a>
+        <a href="https://wa.me/27XXXXXXXXX?text=Hi%2C+I%27d+like+a+quick+quote+on+" class="btn-wa">
+          <svg class="wa-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Quick Quote on WhatsApp
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item"><div class="num">15+</div><div class="lbl">Years in Business</div></div>
+        <div class="stat-item"><div class="num">500+</div><div class="lbl">Clients Served</div></div>
+        <div class="stat-item"><div class="num">3</div><div class="lbl">Core Product Lines</div></div>
+      </div>
+    </div>
+    <div class="hero-img">
+      <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80" alt="Industrial plastic packaging rolls in a warehouse">
+    </div>
+  </div>
+</section>
+
+<div class="trust-bar">
+  <div class="trust-inner">
+    <div class="trust-item"><div class="trust-dot"></div>Based in Waltloo, Pretoria</div>
+    <div class="trust-item"><div class="trust-dot"></div>Custom sizes available</div>
+    <div class="trust-item"><div class="trust-dot"></div>Orders big or small welcome</div>
+    <div class="trust-item"><div class="trust-dot"></div>On-time local delivery</div>
+    <div class="trust-item"><div class="trust-dot"></div>High-density polyethene</div>
+  </div>
+</div>
+
+<section class="section" id="about">
+  <div class="section-inner">
+    <div class="intro-grid">
+      <div class="intro-image">
+        <img src="https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?w=800&q=80" alt="Packaging solutions for South African businesses">
+      </div>
+      <div class="intro-text">
+        <div class="section-tag">Why Gerik Plasticus?</div>
+        <h2 class="section-title">Are Your Plastic Solutions Just Not Cutting It?</h2>
+        <p>Do you need a different size pallet wrap to make sure goods don't shift during transport? Or has finding the right size plastic tubing become a challenge?</p>
+        <p>At Gerik Plasticus, we manufacture the exact premier plastic products you want — to your specifications, at the right price, delivered on time.</p>
+        <div class="intro-features">
+          <div class="feat-row"><div class="feat-check"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></div><span>Standard formats or fully customised options — size, colour, and type</span></div>
+          <div class="feat-row"><div class="feat-check"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></div><span>10 rolls or 10,000 — we handle any order size</span></div>
+          <div class="feat-row"><div class="feat-check"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></div><span>Local distribution with on-time delivery across South Africa</span></div>
+          <div class="feat-row"><div class="feat-check"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></div><span>High-density polyethene — premier quality at competitive prices</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="products" id="products">
+  <div class="section-inner">
+    <div class="section-tag">Our Products</div>
+    <h2 class="section-title">Plastic Products to Keep You Covered</h2>
+    <p class="section-sub">A wide range of packaging and plastic products for food & beverage, industrial, agricultural, and general use.</p>
+    <div class="products-grid">
+      <div class="prod-card">
+        <div class="prod-img"><img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Shrink wrap rolls"></div>
+        <div class="prod-body">
+          <h3>Shrink Wrap</h3>
+          <p>High-clarity shrink film for professional product presentation and tamper protection.</p>
+          <div class="prod-tags"><span class="tag">Food & Beverage</span><span class="tag">Retail</span><span class="tag">Industrial</span></div>
+          <a href="#" class="prod-link">Learn more <svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-img"><img src="https://images.unsplash.com/photo-1605600659873-d808a13e4d2a?w=600&q=80" alt="Pallet wrap"></div>
+        <div class="prod-body">
+          <h3>Pallet Wrap</h3>
+          <p>Secure your goods during transport. Strong stretch film that keeps pallets stable and protected.</p>
+          <div class="prod-tags"><span class="tag">Food & Beverage</span><span class="tag">Transport</span><span class="tag">General</span></div>
+          <a href="#" class="prod-link">Learn more <svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-img"><img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=600&q=80" alt="Plastic tubing"></div>
+        <div class="prod-body">
+          <h3>Plastic Tubing</h3>
+          <p>Flexible plastic tubing available in various diameters for industrial, agricultural, and general use.</p>
+          <div class="prod-tags"><span class="tag">Agricultural</span><span class="tag">Industrial</span><span class="tag">General</span></div>
+          <a href="#" class="prod-link">Learn more <svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-img"><img src="https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?w=600&q=80" alt="Custom plastic products"></div>
+        <div class="prod-body">
+          <h3>Custom Plastic Products</h3>
+          <p>Tubing, sheeting, shrink film and pallet wrap — plain or printed, made to your exact specifications.</p>
+          <div class="prod-tags"><span class="tag">Custom Sizes</span><span class="tag">Printed</span></div>
+          <a href="#" class="prod-link">Learn more <svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="values" id="values">
+  <div class="section-inner">
+    <div style="text-align:center;margin-bottom:0.5rem" class="section-tag">What Sets Us Apart</div>
+    <h2 class="section-title" style="text-align:center;margin:0 auto 0.5rem">Built Around Your Business</h2>
+    <p class="section-sub" style="text-align:center;margin:0 auto">We work with you — not just for you.</p>
+    <div class="values-grid">
+      <div class="val-card">
+        <div class="val-icon" style="background:#1565c0"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+        <h4>Client Focus</h4>
+        <p>We work with you to find the best plastic solution for your packaging needs. Standard or custom.</p>
+      </div>
+      <div class="val-card">
+        <div class="val-icon" style="background:#0d3b6e"><svg viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></div>
+        <h4>Highly Customisable</h4>
+        <p>Size, colour, or type — we customise all our plastic solutions to fit your individual requirements.</p>
+      </div>
+      <div class="val-card">
+        <div class="val-icon" style="background:#1976d2"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+        <h4>Premier Quality</h4>
+        <p>Made with high-density polyethene — the highest quality plastic solutions at competitive prices.</p>
+      </div>
+      <div class="val-card">
+        <div class="val-icon" style="background:#2196f3"><svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+        <h4>Any Order Size</h4>
+        <p>Need 10 rolls or 10,000? No matter how big or small your plastic needs — we can help.</p>
+      </div>
+      <div class="val-card">
+        <div class="val-icon" style="background:#0a2a4a"><svg viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></div>
+        <h4>On-Time Delivery</h4>
+        <p>Local distribution with reliable, on-time delivery of your plastic products across South Africa.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="industries">
+  <div class="section-inner">
+    <div class="section-tag" style="color:#7ec8e3">Industries We Serve</div>
+    <h2 class="section-title">Plastic Manufacturing for All Industries</h2>
+    <p class="section-sub" style="color:rgba(255,255,255,0.65)">Gerik Plasticus works with businesses across South Africa in a wide range of sectors.</p>
+    <div class="ind-grid">
+      <div class="ind-card"><div class="ind-icon">🌿</div><h4>Agricultural</h4><p>Landscaping and farming</p></div>
+      <div class="ind-card"><div class="ind-icon">🧀</div><h4>Food & Beverage</h4><p>Retail packaging solutions</p></div>
+      <div class="ind-card"><div class="ind-icon">⚙️</div><h4>Industrial</h4><p>Mining and production</p></div>
+      <div class="ind-card"><div class="ind-icon">🚚</div><h4>Shipping</h4><p>Transportation and distribution</p></div>
+      <div class="ind-card"><div class="ind-icon">🏗️</div><h4>Construction</h4><p>Décor and building</p></div>
+      <div class="ind-card"><div class="ind-icon">🔌</div><h4>Electronics</h4><p>Manufacturers and resellers</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-strip">
+  <h2>Ready to Sort Your Plastic Packaging?</h2>
+  <p>Get in touch for a quick quote — by phone, email, or WhatsApp. We respond fast.</p>
+  <div class="cta-btns">
+    <a href="#contact" class="btn-white">Contact Us</a>
+    <a href="tel:0871100155" class="btn-outline-white">📞 087 110 0155</a>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="section-inner">
+    <div class="section-tag">Get in Touch</div>
+    <h2 class="section-title">Let's Find the Right Solution for You</h2>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="c-item">
+          <div class="c-icon"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div><h4>Find us</h4><p>324 Mark Street, Waltloo, Pretoria</p></div>
+        </div>
+        <div class="c-item">
+          <div class="c-icon"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.62 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 5.61 5.61l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+          <div><h4>Call us</h4><a href="tel:0871100155">087 110 0155</a><p>Mon – Fri, 9am – 5pm</p></div>
+        </div>
+        <div class="c-item">
+          <div class="c-icon"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+          <div><h4>Email us</h4><a href="mailto:info@gerik.co.za">info@gerik.co.za</a></div>
+        </div>
+        <div class="c-item">
+          <div class="c-icon" style="background:#dcf8e6"><svg viewBox="0 0 24 24" style="stroke:#25d366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z" stroke-width="0" fill="#25d366"/></svg></div>
+          <div><h4>WhatsApp Quote</h4><p>Send us your requirements for a fast quote — number coming soon</p></div>
+        </div>
+      </div>
+      <div class="contact-form">
+        <h3>Request a Quick Quote</h3>
+        <div class="form-row">
+          <div class="form-group"><label>Name</label><input type="text" placeholder="Your name"></div>
+          <div class="form-group"><label>Company</label><input type="text" placeholder="Company name"></div>
+        </div>
+        <div class="form-group"><label>Email</label><input type="email" placeholder="your@email.com"></div>
+        <div class="form-group"><label>Product needed</label>
+          <select><option>Select a product</option><option>Shrink Wrap</option><option>Pallet Wrap</option><option>Plastic Tubing</option><option>Custom Product</option></select>
+        </div>
+        <div class="form-group"><label>Tell us more</label><textarea placeholder="Quantity, size, any special requirements..."></textarea></div>
+        <button class="btn-submit">Send Quote Request</button>
+        <p class="or-wa">Or get a faster response on WhatsApp</p>
+        <a href="https://wa.me/27XXXXXXXXX?text=Hi%2C+I%27d+like+a+quick+quote+on+" class="wa-contact-btn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Chat on WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="https://gerik.co.za/wp-content/uploads/2018/06/cropped-Gerik-Plasticus-Logo_500x389-1-1.png" alt="Gerik Plasticus">
+        <p>Premier plastic solutions for South African businesses. Established in 2010. Supplying shrink wrap, pallet wrap, and plastic tubing from Pretoria.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Pages</h5>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Industries</a></li>
+          <li><a href="#">Our Story</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="https://maps.google.com/?q=324+Mark+Street+Waltloo+Pretoria" target="_blank">324 Mark Street, Waltloo, Pretoria</a></li>
+          <li><a href="tel:0871100155">087 110 0155</a></li>
+          <li><a href="mailto:info@gerik.co.za">info@gerik.co.za</a></li>
+          <li>Mon – Fri, 9am – 5pm</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Gerik Plasticus. All rights reserved.</span>
+      <span>324 Mark Street, Waltloo, Pretoria</span>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/27XXXXXXXXX?text=Hi%2C+I%27d+like+a+quick+quote+on+" class="wa-float" title="Quick quote on WhatsApp">
+  <div class="wa-tooltip">Get a quick quote</div>
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+</body>
+</html>
